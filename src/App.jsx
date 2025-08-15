@@ -4,8 +4,8 @@ import Layout from "./Components/Layout";
 import Dashboard from "./Components/Dashboard";
 import StudentList from "./Components/StudentList";
 import TeacherList from "./Components/TeacherList";
-import Login from "./Components/Login";
 import AttendanceCards from "./Components/AttendanceCards";
+import AddStudent from "./Components/AddStudent";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -14,7 +14,8 @@ function App() {
     <div className={darkMode ? "dark" : ""}>
       <Router>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/" element={<Dashboard />} />{" "}
+          {/* Login replace with Dashboard */}
           <Route
             element={<Layout darkMode={darkMode} setDarkMode={setDarkMode} />}
           >
@@ -22,6 +23,8 @@ function App() {
             <Route path="/students" element={<StudentList />} />
             <Route path="/teachers" element={<TeacherList />} />
             <Route path="/attendance" element={<AttendanceCards />} />
+            <Route path="/add-student" element={<AddStudent />} />{" "}
+            {/* Separate Add Student page */}
           </Route>
         </Routes>
       </Router>
