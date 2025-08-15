@@ -1,4 +1,3 @@
-// src/App.jsx
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./Components/Layout";
@@ -6,6 +5,7 @@ import Dashboard from "./Components/Dashboard";
 import StudentList from "./Components/StudentList";
 import TeacherList from "./Components/TeacherList";
 import Login from "./Components/Login";
+import AttendanceCards from "./Components/AttendanceCards";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -21,6 +21,7 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/students" element={<StudentList />} />
             <Route path="/teachers" element={<TeacherList />} />
+            <Route path="/attendance" element={<AttendanceCards />} />
           </Route>
         </Routes>
       </Router>

@@ -41,6 +41,16 @@ const Sidebar = () => {
         >
           <FaChalkboardTeacher /> Teachers
         </NavLink>
+        <NavLink
+          to="/attendance"
+          className={({ isActive }) =>
+            `flex items-center gap-3 px-4 py-2 rounded-md transition-all duration-200 ${
+              isActive ? "bg-blue-600 font-semibold" : "hover:bg-blue-700"
+            }`
+          }
+        >
+          🗒 Attendance
+        </NavLink>
       </nav>
     </aside>
   );

@@ -2,6 +2,9 @@
 import React from "react";
 import Sidebar from "./Sidebar";
 import { Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
+
+<Link to="/attendance">Attendance</Link>;
 
 const Layout = () => {
   return (
