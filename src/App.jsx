@@ -7,7 +7,7 @@ import StudentList from "./Components/StudentList";
 import TeacherList from "./Components/TeacherList";
 import Login from "./Components/Login";
 import AttendanceCards from "./Components/AttendanceCards";
-import AddStudent from "./Components/Addstudent";
+import addStudent from "./Components/addStudent";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);

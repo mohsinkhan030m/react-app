@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const AddStudent = () => {
+const addStudent = () => {
   const [name, setName] = useState("");
   const [rollNumber, setRollNumber] = useState("");
   const [studentClass, setStudentClass] = useState("");
@@ -84,4 +84,4 @@ const AddStudent = () => {
   );
 };
 
-export default AddStudent;
+export default addStudent;
