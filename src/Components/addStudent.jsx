@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const addStudent = () => {
+const AddStudent = () => {
   const [name, setName] = useState("");
   const [rollNumber, setRollNumber] = useState("");
   const [studentClass, setStudentClass] = useState("");
@@ -8,6 +8,7 @@ const addStudent = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     const formData = new FormData();
     formData.append("name", name);
     formData.append("roll_number", rollNumber);
@@ -84,4 +85,4 @@ const addStudent = () => {
   );
 };
 
-export default addStudent;
+export default AddStudent;
